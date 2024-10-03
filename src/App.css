@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -42,4 +42,71 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.nav-class {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  /* gap-2 */
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  /* shadow-xl */
+  font-size: 1.125rem;
+  /* text-lg */
+  background-color: #f9fafb;
+  /* bg-gray-50 */
+  backdrop-filter: blur(10px);
+  /* backdrop-blur-md */
+  font-weight: 600;
+  /* lg:font-semibold (adjust based on your media query) */
+  border-color: #f9fafb;
+  /* border-gray-50 */
+  position: relative;
+  padding: 0.5rem 1rem;
+  /* px-4 py-2 */
+  border-width: 2px;
+  /* border-2 */
+  border-radius: 9999px;
+  /* rounded-full */
+  overflow: hidden;
+  z-index: 10;
+  /* relative z-10 */
+}
+
+.nav-class::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transition: all 0.7s;
+  aspect-ratio: 1;
+  /* before:aspect-square */
+  left: -100%;
+  /* before:-left-full */
+  background-color: #34d399;
+  /* before:bg-emerald-500 */
+  border-radius: 9999px;
+  /* before:rounded-full */
+  z-index: -10;
+  /* before:-z-10 */
+}
+
+.nav-class:hover {
+  color: #f9fafb;
+  /* hover:text-gray-50 */
+}
+
+.nav-class:hover::before {
+  width: 100%;
+  left: 0;
+  /* before:hover:left-0 */
+  scale: 1.5;
+  /* before:hover:scale-150 */
+}
+
+.nav-class:hover::before {
+  transition-duration: 0.7s;
+  /* before:hover:duration-700 */
 }
