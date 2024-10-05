@@ -1,13 +1,18 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import Switcher from "../../Hooks/DarkMode/Switcher";
 
 const Navbar = () => {
   return (
     <div className="sticky top-0 z-50 bg-transparent bg-opacity-50">
-      <div className="navbar  ">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost text-blue-500 lg:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -58,7 +63,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Blockchain Technology</a>
+          <a className="btn btn-ghost text-xl text-blue-500">
+            Blockchain Technology
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 gap-2">
@@ -90,13 +97,14 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
+
             <li>
               <a className="nav-class">FAQ</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <Switcher />
         </div>
       </div>
     </div>
