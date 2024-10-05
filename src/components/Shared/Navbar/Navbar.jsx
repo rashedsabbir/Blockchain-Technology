@@ -63,7 +63,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-blue-500">
+          <a className="btn btn-ghost text-xl text-primary">
             Blockchain Technology
           </a>
         </div>
