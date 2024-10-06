@@ -4,9 +4,9 @@ import Switcher from "../../Hooks/DarkMode/Switcher";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 bg-transparent bg-opacity-50">
+    <div className="fixed top-0 right-64 z-10 bg-transparent bg-opacity-50">
       <div className="navbar">
-        <div className="navbar-start">
+        <div className="navbar-center">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -70,7 +70,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 gap-2">
             <li>
-              <a className="nav-class">Hover Me</a>
+              <a className="nav-class">About US</a>
             </li>
             <li>
               <a className="nav-class">Contact Us</a>
