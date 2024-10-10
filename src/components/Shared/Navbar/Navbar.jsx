@@ -103,7 +103,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className=" flex justify-end items-end">
           <Switcher />
         </div>
       </div>
