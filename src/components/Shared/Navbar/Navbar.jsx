@@ -4,7 +4,7 @@ import Switcher from "../../Hooks/DarkMode/Switcher";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 right-64 z-10 bg-transparent bg-opacity-50">
+    <div className="sticky top-0 z-10 bg-white  backdrop-filter backdrop-blur-lg bg-opacity-30 ">
       <div className="navbar">
         <div className="navbar-center">
           <div className="dropdown">
