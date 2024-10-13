@@ -56,13 +56,13 @@
   /* shadow-xl */
   font-size: 1.125rem;
   /* text-lg */
-  background-color: #f9fafb;
+  background-color: #ecfeff;
   /* bg-gray-50 */
   backdrop-filter: blur(10px);
   /* backdrop-blur-md */
   font-weight: 600;
   /* lg:font-semibold (adjust based on your media query) */
-  border-color: #f9fafb;
+  border-color: #ecfeff;
   /* border-gray-50 */
   position: relative;
   padding: 0.5rem 1rem;
@@ -85,7 +85,7 @@
   /* before:aspect-square */
   left: -100%;
   /* before:-left-full */
-  background-color: #34d399;
+  background-color: #30718b;
   /* before:bg-emerald-500 */
   border-radius: 9999px;
   /* before:rounded-full */
@@ -94,7 +94,7 @@
 }
 
 .nav-class:hover {
-  color: #f9fafb;
+  color: #cfe7f3;
   /* hover:text-gray-50 */
 }
 

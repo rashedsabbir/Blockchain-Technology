@@ -11,7 +11,17 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["corporate"],
+    themes: [
+      {
+        mytheme: {
+          "primary": "#6caac6",
+          "secondary": "#cfe7f3",
+          "light": "#5897b2",
+          "dark": "#f6f6f6",
+          "base-100": "#ffffff",
+        },
+      },
+      ],
   },
   
 }

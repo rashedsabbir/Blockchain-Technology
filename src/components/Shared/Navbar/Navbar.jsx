@@ -4,8 +4,8 @@ import Switcher from "../../Hooks/DarkMode/Switcher";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-10 bg-white  backdrop-filter backdrop-blur-lg bg-opacity-30 ">
-      <div className="navbar">
+    <div className="sticky top-0 z-10  backdrop-filter backdrop-blur-lg bg-opacity-30 ">
+      <div className="navbar flex justify-between">
         <div className="navbar-center">
           <div className="dropdown">
             <div
@@ -63,30 +63,37 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-primary">
-            Blockchain Technology
-          </a>
+          <div className="">
+            <a className="btn btn-ghost text-xl text-primary dark:text-secondary  ">
+              <img
+                className="lg:w-10 lg:h-12 w-5 h-5"
+                src="/Blockchain tech logo.png"
+                alt=""
+              />{" "}
+              <h3>Blockchain Technology</h3>
+            </a>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex ">
-          <ul className="menu menu-horizontal px-1 gap-2">
+          <ul className="menu menu-horizontal  px-1 gap-2">
             <li>
-              <a className="nav-class">About US</a>
+              <a className="nav-class text-primary">About US</a>
             </li>
             <li>
-              <a className="nav-class">Contact Us</a>
+              <a className="nav-class text-primary">Contact Us</a>
             </li>
             <li>
-              <a className="nav-class">Services</a>
+              <a className="nav-class text-primary">Services</a>
             </li>
             <li>
-              <a className="nav-class">Team</a>
+              <a className="nav-class text-primary">Team</a>
             </li>
             <li>
-              <a className="nav-class">Career</a>
+              <a className="nav-class text-primary">Career</a>
             </li>
             <li>
               <details>
-                <summary className="nav-class text-blue-500">Products</summary>
+                <summary className="nav-class text-primary">Products</summary>
                 <ul className="p-2">
                   <li>
                     <a>Product 1</a>
@@ -99,11 +106,11 @@ const Navbar = () => {
             </li>
 
             <li>
-              <a className="nav-class">FAQ</a>
+              <a className="nav-class text-primary">FAQ</a>
             </li>
           </ul>
         </div>
-        <div className=" flex justify-end items-end">
+        <div className=" ">
           <Switcher />
         </div>
       </div>

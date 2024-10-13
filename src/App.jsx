@@ -5,7 +5,7 @@ import Test from "./components/Test/Test";
 
 function App() {
   return (
-    <div className="dark:bg-black">
+    <div className="dark:bg-cyan-800 bg-cyan-50">
       <Navbar />
       {/* <Header /> */}
       <Test />
