@@ -3,28 +3,28 @@ import { useEffect, useState } from "react";
 const data = [
   {
     img: "https://img.freepik.com/premium-photo/3d-flat-icon-as-business-team-collaborating-through-cloud-computing-concept-as-vector-illustration-o_980716-409666.jpg?w=826",
-    title: "Forest Serenity",
-    des: "Discover the peace and beauty of the forest. A perfect place to escape the everyday hustle and reconnect with nature.",
+    title: "Custom Software Development",
+    des: "Tailored solutions to meet your business needs.",
   },
   {
     img: "https://images.unsplash.com/photo-1508873881324-c92a3fc536ba?q=80&w=2070&auto=format&fit=crop",
-    title: "Golden Canopy",
-    des: "Bask in the warmth and beauty of the golden leaves against a clear blue sky. A perfect spot for a peaceful retreat and reflection.",
+    title: "Expert IT Consulting & Strategy",
+    des: "Guiding you through digital transformation.",
   },
   {
     img: "https://images.unsplash.com/photo-1719749990914-a3ba54e6343f?q=80&w=2072&auto=format&fit=crop",
-    title: "Urban Exploration",
-    des: "Venture into the hidden corners of the city and uncover the beauty of forgotten urban landscapes. A thrilling escape into the depths of urban architecture.",
+    title: "Robust Cybersecurity Solutions",
+    des: "Protecting your business from cyber threats.",
   },
   {
     img: "https://images.unsplash.com/photo-1467195468637-72eb862bb14e?q=80&w=2071&auto=format&fit=crop",
-    title: "Industrial Mystery",
-    des: "Explore the enigmatic charm of industrial structures. A perfect setting for those with a sense of adventure and an eye for urban beauty.",
+    title: "Reliable IT Infrastructure",
+    des: "Building the backbone of your operations.",
   },
   {
     img: "https://images.unsplash.com/photo-1532155297578-a43684be8db8?q=80&w=2071&auto=format&fit=crop",
-    title: "Blossom Bliss",
-    des: "Revel in the vibrant colors and delicate petals of a blossoming field. An ideal retreat for those seeking a burst of natural beauty and serenity.",
+    title: "Innovative Digital Marketing",
+    des: "Boosting your online presence and engagement.",
   },
 ];
 
@@ -68,7 +68,7 @@ export default function Carousel6() {
               />
               <div className="absolute inset-0 flex flex-col bg-black/40 p-5 text-center text-white drop-shadow-lg">
                 <div className="mb-0 mt-auto rounded-md bg-white/40 p-3 backdrop-blur-3xl">
-                  <div className="mb-3 overflow-hidden text-xl font-semibold lg:text-3xl">
+                  <div className=" overflow-hidden font-semibold text-[10px] lg:text-xl py-3">
                     <h1
                       className={`${
                         index === currentSlider ? "" : "translate-y-12"
