@@ -1,14 +1,17 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Shared/Navbar/Navbar";
-import Test from "./components/Test/Test";
+import SubHeader from "./components/SubHeader/SubHeader";
+import Test from "./components/Test/Test2";
 
 function App() {
   return (
-    <div className="dark:bg-cyan-800 bg-cyan-50">
+    <div className="">
       <Navbar />
-      {/* <Header /> */}
+
+      <Header />
       <Test />
+      {/* <SubHeader /> */}
       <div className="my-40">my-40</div>
       <div className="my-40">my-40</div>
       <div className="my-40">my-40</div>

@@ -56,18 +56,18 @@
   /* shadow-xl */
   font-size: 1.125rem;
   /* text-lg */
-  background-color: #ecfeff;
+  /* background-color: #ecfeff; */
   /* bg-gray-50 */
   backdrop-filter: blur(10px);
   /* backdrop-blur-md */
   font-weight: 600;
   /* lg:font-semibold (adjust based on your media query) */
-  border-color: #ecfeff;
+  /* border-color: #ecfeff; */
   /* border-gray-50 */
   position: relative;
   padding: 0.5rem 1rem;
   /* px-4 py-2 */
-  border-width: 2px;
+  /* border-width: 1px; */
   /* border-2 */
   border-radius: 9999px;
   /* rounded-full */
@@ -164,4 +164,8 @@
 
 .swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
+}
+
+.hero-bg {
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
 }

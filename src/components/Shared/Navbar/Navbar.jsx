@@ -4,7 +4,7 @@ import Switcher from "../../Hooks/DarkMode/Switcher";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-10  backdrop-filter backdrop-blur-lg bg-opacity-30 ">
+    <div className="sticky top-0 z-10 bg-black  backdrop-filter backdrop-blur-lg bg-opacity-10 ">
       <div className="navbar flex justify-between">
         <div className="navbar-center">
           <div className="dropdown">
@@ -70,14 +70,18 @@ const Navbar = () => {
                 src="/Blockchain tech logo.png"
                 alt=""
               />{" "}
-              <h3>Blockchain Technology</h3>
+              <h3 className="neon-text glitch-effect text-2xl">
+                Blockchain Technology
+              </h3>
             </a>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal  px-1 gap-2">
             <li>
-              <a className="nav-class text-primary">About US</a>
+              <a className=" text-white hover:border-b-2 rounded-sm">
+                About US
+              </a>
             </li>
             <li>
               <a className="nav-class text-primary">Contact Us</a>
