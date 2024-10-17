@@ -6,7 +6,7 @@ import Test from "./components/Test/Test2";
 
 function App() {
   return (
-    <div className="">
+    <div className="bg-white">
       <Navbar />
 
       <Header />

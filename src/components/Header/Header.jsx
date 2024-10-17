@@ -3,13 +3,13 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-      <section className="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
+      <section className="relative   text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 bg-cover bg-center hero-bg"></div>
 
         <div className="container mx-auto px-4 py-24 md:py-32 relative lg:my-12">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="w-full md:w-1/2 mb-12 md:mb-0 mx-12">
+            <div className="w-full md:w-1/2 mb-12 md:mb-0 lg:mx-24">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-left">
                 Innovative.
                 <br />
@@ -35,7 +35,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="w-full md:w-1/2 lg:w-1/3 md:pl-12">
+            <div className="w-full md:w-1/2 lg:w-1/3 md:pl-12 lg:mx-24">
               <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
                 <h2 className="text-2xl font-semibold mb-6 text-left">
                   Why Blockchain Technology?
@@ -99,15 +99,32 @@ const Header = () => {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0">
-          <svg
-            viewBox="0 0 1440 120"
-            fill="none"
+          {/* <svg
+            viewBox="0 0 1920 0"
+            fill="black"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
               fill="white"
             />
+          </svg> */}
+          <svg
+            id="wave"
+            viewBox="0 0 1920 230"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stopColor="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                <stop stopColor="rgba(255, 255, 255, 1)" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <path
+              fill="url(#sw-gradient-0)"
+              d="M0,92L60,95.8C120,100,240,107,360,107.3C480,107,600,100,720,111.2C840,123,960,153,1080,145.7C1200,138,1320,92,1440,76.7C1560,61,1680,77,1800,88.2C1920,100,2040,107,2160,118.8C2280,130,2400,146,2520,145.7C2640,146,2760,130,2880,130.3C3000,130,3120,146,3240,157.2C3360,169,3480,176,3600,176.3C3720,176,3840,169,3960,145.7C4080,123,4200,84,4320,69C4440,54,4560,61,4680,57.5C4800,54,4920,38,5040,46C5160,54,5280,84,5400,111.2C5520,138,5640,161,5760,164.8C5880,169,6000,153,6120,157.2C6240,161,6360,184,6480,168.7C6600,153,6720,100,6840,84.3C6960,69,7080,92,7200,92C7320,92,7440,69,7560,53.7C7680,38,7800,31,7920,46C8040,61,8160,100,8280,99.7C8400,100,8520,61,8580,42.2L8640,23L8640,230L8580,230C8520,230,8400,230,8280,230C8160,230,8040,230,7920,230C7800,230,7680,230,7560,230C7440,230,7320,230,7200,230C7080,230,6960,230,6840,230C6720,230,6600,230,6480,230C6360,230,6240,230,6120,230C6000,230,5880,230,5760,230C5640,230,5520,230,5400,230C5280,230,5160,230,5040,230C4920,230,4800,230,4680,230C4560,230,4440,230,4320,230C4200,230,4080,230,3960,230C3840,230,3720,230,3600,230C3480,230,3360,230,3240,230C3120,230,3000,230,2880,230C2760,230,2640,230,2520,230C2400,230,2280,230,2160,230C2040,230,1920,230,1800,230C1680,230,1560,230,1440,230C1320,230,1200,230,1080,230C960,230,840,230,720,230C600,230,480,230,360,230C240,230,120,230,60,230L0,230Z"
+            ></path>
           </svg>
         </div>
       </section>
