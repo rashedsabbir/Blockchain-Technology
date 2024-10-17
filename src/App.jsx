@@ -1,4 +1,5 @@
 import "./App.css";
+import AboutUs from "./components/AboutUs/AboutUs";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Shared/Navbar/Navbar";
 import SubHeader from "./components/SubHeader/SubHeader";
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
 
       <Header />
+      <AboutUs />
       <Test />
       {/* <SubHeader /> */}
       <div className="my-40">my-40</div>
