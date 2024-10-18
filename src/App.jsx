@@ -5,6 +5,7 @@ import Navbar from "./components/Shared/Navbar/Navbar";
 import SubHeader from "./components/SubHeader/SubHeader";
 import Test2 from "./components/Test/Test2";
 import Test from "./components/Test/Test";
+import Services from "./components/Services/Services";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
 
       <Header />
       <AboutUs />
-      <Test2 />
-      <Test />
+      <Services />
+      {/* <Test2 /> */}
+      {/* <Test /> */}
       {/* <SubHeader /> */}
       <div className="my-40">my-40</div>
       <div className="my-40">my-40</div>

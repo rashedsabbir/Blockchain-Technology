@@ -114,9 +114,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className=" ">
+        {/* <div className=" ">
           <Switcher />
-        </div>
+        </div> */}
       </div>
     </div>
   );
