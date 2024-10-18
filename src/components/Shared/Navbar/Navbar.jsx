@@ -4,7 +4,7 @@ import Switcher from "../../Hooks/DarkMode/Switcher";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 bg-black  backdrop-filter backdrop-blur-lg bg-opacity-10 ">
+    <div className="sticky top-0 z-50 bg-white  backdrop-filter backdrop-blur-lg bg-opacity-0 ">
       <div className="navbar flex justify-between">
         <div className="navbar-center">
           <div className="dropdown">
@@ -41,9 +41,9 @@ const Navbar = () => {
               <li>
                 <a>Services</a>
               </li>
-              <li>
+              {/* <li>
                 <a>Team</a>
-              </li>
+              </li> */}
               <li>
                 <a>Career</a>
               </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 src="/Blockchain tech logo.png"
                 alt=""
               />{" "}
-              <h3 className="neon-text glitch-effect text-2xl">
+              <h3 className="neon-text glitch-effect lg:text-2xl">
                 Blockchain Technology
               </h3>
             </a>
@@ -79,9 +79,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal  px-1 gap-2">
             <li>
-              <a className=" text-white hover:border-b-2 rounded-sm">
-                About US
-              </a>
+              <a className=" nav-class text-primary">About US</a>
             </li>
             <li>
               <a className="nav-class text-primary">Contact Us</a>
@@ -89,9 +87,9 @@ const Navbar = () => {
             <li>
               <a className="nav-class text-primary">Services</a>
             </li>
-            <li>
+            {/* <li>
               <a className="nav-class text-primary">Team</a>
-            </li>
+            </li> */}
             <li>
               <a className="nav-class text-primary">Career</a>
             </li>

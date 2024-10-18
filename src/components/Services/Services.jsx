@@ -141,7 +141,7 @@ const Services = () => {
             </h2>
           </div>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 px-12 ">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 px-12 pb-12">
           {services.map((service, index) => (
             <div
               key={index}
