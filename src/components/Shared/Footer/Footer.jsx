@@ -43,7 +43,7 @@ const Footer = () => {
                 Bangladesh
               </p>
               <ul className="mt-8 space-y-1 text-sm text-gray-700">
-                <li>Saturday to Friday: 10am - 5pm</li>
+                <li>Saturday to Thursday: 9am - 5pm</li>
                 <li>Weekend: 10am - 3pm</li>
               </ul>
               <ul className="mt-8 flex gap-6 justify-center items-center">
