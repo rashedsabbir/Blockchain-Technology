@@ -15,9 +15,9 @@ const services = [
         <path
           fill="none"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           d="m10 10l2-2v8"
         />
       </svg>
@@ -37,9 +37,9 @@ const services = [
         <path
           fill="none"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           d="M10 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"
         />
       </svg>
@@ -59,9 +59,9 @@ const services = [
         <path
           fill="none"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           d="M10 8h2.5A1.5 1.5 0 0 1 14 9.5v1a1.5 1.5 0 0 1-1.5 1.5H11h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5H10"
         />
       </svg>
@@ -81,9 +81,9 @@ const services = [
         <path
           fill="none"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           d="M10 8v3a1 1 0 0 0 1 1h3m0-4v8"
         />
       </svg>
@@ -103,9 +103,9 @@ const services = [
         <path
           fill="none"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-3V8h4"
         />
       </svg>
@@ -117,14 +117,14 @@ const Services = () => {
   return (
     <div>
       <div>
-        <div class="flex items-center justify-center flex-col py-16 lg:pt-44">
-          <div class="relative group">
-            <button class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
-              <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-100 transition-opacity duration-500 group-hover:opacity-0"></span>
+        <div className="flex items-center justify-center flex-col py-16 lg:pt-44">
+          <div className="relative group">
+            <button className="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
+              <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-100 transition-opacity duration-500 group-hover:opacity-0"></span>
 
-              <span class="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
-                <div class="relative z-10 flex items-center space-x-2">
-                  <span class="transition-all duration-500 group-hover:translate-x-1">
+              <span className="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
+                <div className="relative z-10 flex items-center space-x-2">
+                  <span className="transition-all duration-500 group-hover:translate-x-1">
                     EXPLORE OUR SERVICES
                   </span>
                 </div>
@@ -132,7 +132,7 @@ const Services = () => {
             </button>
           </div>
           <div>
-            <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-gray-800 sm:text-5xl pt-6 ">
+            <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-gray-800 sm:text-5xl pt-6 px-4">
               We Are{" "}
               <span className="my-1 inline-block border-b-8 border-gray-800 font-bold text-gray-800">
                 Committed

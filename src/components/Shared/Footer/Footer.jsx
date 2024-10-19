@@ -6,10 +6,12 @@ const Footer = () => {
       <footer className="bg-white lg:grid lg:grid-cols-5 gap-4">
         <div className="  lg:col-span-2 flex lg:flex-row flex-col lg:py-12 items-center">
           <img src="./Blockchain 256 logo.png" alt="" className=" h-80 w-80 " />
-          <p>
+          <p className="px-4">
             Blockchain Technoloogy aims to please your needs as per
-            requirements. You can reach us via email at
-            blockchaintech@stechgroupbd.com
+            requirements. You can reach us via email at <br />
+            <a href="mailto:blockchaintech@stechgroupbd.com">
+              blockchaintech@stechgroupbd.com
+            </a>
           </p>
         </div>
 
@@ -17,24 +19,33 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             <div>
               <p>
-                <span className="text-xs font-bold uppercase tracking-wide text-gray-500">
+                <span className="text-lg font-bold uppercase tracking-wide text-gray-500">
                   {" "}
                   Call us{" "}
                 </span>
 
                 <a
-                  href="#"
+                  href="tel:+8809606990123"
                   className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
                 >
                   +8809606990123
                 </a>
+                <a
+                  href="tel:+8801818773300"
+                  className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
+                >
+                  +8801818773300
+                </a>
               </p>
 
+              <p className="mt-8">
+                House- 31, Road- 17, Block- E Banani, <br /> Dhaka- 1213,
+                Bangladesh
+              </p>
               <ul className="mt-8 space-y-1 text-sm text-gray-700">
                 <li>Saturday to Friday: 10am - 5pm</li>
                 <li>Weekend: 10am - 3pm</li>
               </ul>
-
               <ul className="mt-8 flex gap-6 justify-center items-center">
                 <li>
                   <a
@@ -231,7 +242,7 @@ const Footer = () => {
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      Meet the Team{" "}
+                      Contact US{" "}
                     </a>
                   </li>
 
@@ -241,7 +252,7 @@ const Footer = () => {
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      Accounts Review{" "}
+                      FAQ{" "}
                     </a>
                   </li>
                 </ul>
@@ -251,7 +262,7 @@ const Footer = () => {
 
           <div className="mt-12 border-t border-gray-100 pt-12">
             <div className="sm:flex sm:items-center sm:justify-between">
-              <ul className="flex flex-wrap gap-4 text-xs">
+              <ul className="flex flex-wrap gap-4 text-xs justify-center">
                 <li>
                   <a
                     href="#"

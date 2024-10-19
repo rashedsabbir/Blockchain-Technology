@@ -38,19 +38,40 @@ const Test2 = () => {
         "Taskiee's mobile app has made remote work a breeze for me. I can seamlessly manage tasks on the go, ensuring that I stay productive regardless of my location.",
       keyWord: "Individual",
     },
+    {
+      name: "Chris Brown",
+      designation: "Parent",
+      testimonialDescription:
+        "Managing family schedules is no easy task, but Taskiee has made it seamless. From school activities to household chores, Taskiee keeps our family organized and on track.",
+      keyWord: "Boy",
+    },
+    {
+      name: "Olivia Davis",
+      designation: "Health Professional",
+      testimonialDescription:
+        "In the healthcare field, where time is crucial, Taskiee has become my ally. Its time tracking feature has allowed me to optimize patient care and manage administrative tasks efficiently.",
+      keyWord: "Girl",
+    },
+    {
+      name: "Liam Wilson",
+      designation: "Researcher",
+      testimonialDescription:
+        "Taskiee's analytics feature has proven invaluable in my research endeavors. It provides insightful data on my productivity patterns, helping me refine my workflow and achieve research goals",
+      keyWord: "Toddler",
+    },
   ];
 
   const [currentSlider, setCurrentSlider] = useState(0);
-
+  // The slider images array
   const prevSlider = () =>
     setCurrentSlider((currentSlider) =>
-      currentSlider === 0 ? array.length - 1 : currentSlider - 1
+      currentSlider === 0 ? array.length - 2 : currentSlider - 1
     );
   const nextSlider = () =>
     setCurrentSlider((currentSlider) =>
-      currentSlider === array.length - 1 ? 0 : currentSlider + 1
+      currentSlider === array.length - 2 ? 0 : currentSlider + 1
     );
-
+  // if you don't want to change the slider automatically then you can just remove the useEffect
   useEffect(() => {
     const intervalId = setInterval(() => {
       nextSlider();
@@ -77,10 +98,19 @@ const Test2 = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="black"
             >
-              <path
-                fill="black"
-                d="M685.248 104.704a64 64 0 010 90.496L368.448 512l316.8 316.8a64 64 0 01-90.496 90.496L232.704 557.248a64 64 0 010-90.496l362.048-362.048a64 64 0 0190.496 0z"
-              ></path>
+              {" "}
+              <g strokeWidth="0"></g>{" "}
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>{" "}
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill="black"
+                  d="M685.248 104.704a64 64 0 010 90.496L368.448 512l316.8 316.8a64 64 0 01-90.496 90.496L232.704 557.248a64 64 0 010-90.496l362.048-362.048a64 64 0 0190.496 0z"
+                ></path>
+              </g>
             </svg>
           </button>
           {/* arrow right */}
@@ -95,10 +125,20 @@ const Test2 = () => {
               fill="black"
               transform="rotate(180)"
             >
-              <path
-                fill="black"
-                d="M685.248 104.704a64 64 0 010 90.496L368.448 512l316.8 316.8a64 64 0 01-90.496 90.496L232.704 557.248a64 64 0 010-90.496l362.048-362.048a64 64 0 0190.496 0z"
-              ></path>
+              {" "}
+              <g strokeWidth="0"></g>{" "}
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>{" "}
+              <g id="SVGRepo_iconCarrier">
+                {" "}
+                <path
+                  fill="black"
+                  d="M685.248 104.704a64 64 0 010 90.496L368.448 512l316.8 316.8a64 64 0 01-90.496 90.496L232.704 557.248a64 64 0 010-90.496l362.048-362.048a64 64 0 0190.496 0z"
+                ></path>
+              </g>
             </svg>
           </button>
         </div>
@@ -114,29 +154,33 @@ const Test2 = () => {
           {/* sliders */}
           {array.map((each, idx) => (
             <div key={idx} className="p-4 min-w-full md:min-w-[50%]">
-              {/* Modified card */}
-              <div className="group relative cursor-pointer overflow-hidden bg-gray-800 rounded-2xl px-6 pt-12 pb-10 shadow-2xl ring-1 ring-gray-900/5 transition-all duration-500 transform hover:scale-105 hover:shadow-3xl">
-                <span className="absolute top-0 left-0 z-0 h-32 w-32 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 opacity-75 transition-all duration-500 transform group-hover:scale-[20]"></span>
-                <div className="relative z-10 mx-auto max-w-md">
-                  {/* Number instead of SVG */}
-                  <span className="grid h-24 w-24 place-items-center rounded-full bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-500 transform group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-yellow-500">
-                    <span className="text-white text-3xl font-bold">
-                      {idx + 1}
+              <div className="h-full p-8 rounded shadow-[0px_4px_12px_rgba(0,0,0,0.1)]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  className="block w-5 h-5 text-slate-800 mb-4"
+                  viewBox="0 0 975.036 975.036"
+                >
+                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p className="leading-relaxed mb-6 text-gray-500">
+                  {each?.testimonialDescription}
+                </p>
+                <a className="inline-flex items-center">
+                  <img
+                    className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                    src={`https://source.unsplash.com/200x200/?${each.keyWord}`}
+                    alt="carousel navigate ui"
+                  />
+                  <span className="flex-grow flex flex-col pl-4">
+                    <span className="title-font font-medium text-gray-900">
+                      {each.name}
+                    </span>
+                    <span className="text-gray-500 text-sm">
+                      {each?.designation}
                     </span>
                   </span>
-                  <div className="space-y-6 pt-6 text-lg leading-8 text-gray-700 transition-all duration-500 group-hover:text-white">
-                    <p className="font-medium text-white">
-                      {each?.testimonialDescription}
-                    </p>
-                  </div>
-                  <div className="pt-6 text-lg font-semibold leading-7">
-                    <p>
-                      <span className="text-purple-500 transition-all duration-500 group-hover:text-white">
-                        {each.name} - {each.designation}
-                      </span>
-                    </p>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           ))}
