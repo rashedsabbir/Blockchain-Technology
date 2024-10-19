@@ -7,6 +7,7 @@ import SubHeader from "./components/SubHeader/SubHeader";
 // import Test from "./components/Test/Test";
 import Services from "./components/Services/Services";
 import Footer from "./components/Shared/Footer/Footer";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <AboutUs />
       <Services />
+      <ContactUs />
       <Footer />
       {/* <Test2 /> */}
       {/* <Test /> */}
