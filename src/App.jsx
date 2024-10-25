@@ -23,6 +23,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/contact" element={<ContactUsDeailed />} />
       </Routes>
+      <Footer />
       {/* <Test /> */}
       {/* <Test2 /> */}
 

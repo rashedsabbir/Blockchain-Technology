@@ -82,7 +82,9 @@ const Navbar = () => {
               <a className=" nav-class text-primary">About US</a>
             </li>
             <li>
-              <a className="nav-class text-primary">Contact Us</a>
+              <a href="/contact" className="nav-class text-primary">
+                Contact Us
+              </a>
             </li>
             <li>
               <a className="nav-class text-primary">Services</a>
