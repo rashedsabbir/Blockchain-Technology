@@ -11,6 +11,7 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import NotFound from "./components/Shared/NotFound/NotFound";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
+import ContactUsDeailed from "./components/ContactUs/ContactUsDeailed";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/contact" element={<ContactUsDeailed />} />
       </Routes>
       {/* <Test /> */}
       {/* <Test2 /> */}
