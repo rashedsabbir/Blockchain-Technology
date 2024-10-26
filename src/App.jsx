@@ -12,6 +12,7 @@ import NotFound from "./components/Shared/NotFound/NotFound";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import ContactUsDeailed from "./components/ContactUs/ContactUsDeailed";
+import AboutUsDetailed from "./components/AboutUs/AboutUsDetailed";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/contact" element={<ContactUsDeailed />} />
+        <Route path="/about-us" element={<AboutUsDetailed />} />
       </Routes>
       <Footer />
       {/* <Test /> */}

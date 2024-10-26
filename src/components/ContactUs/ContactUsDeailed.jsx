@@ -25,7 +25,7 @@ const ContactUsDeailed = () => {
           </div>
         </div>
       </section>
-      <div className=" flex md:flex-row flex-col gap-12 py-12">
+      <div className=" flex md:flex-row flex-col gap-12 py-12 justify-center">
         <div className="bg-white rounded-md shadow-md relative ">
           <img
             src="https://demo.bravisthemes.com/orritech/wp-content/uploads/2024/06/img-contact1.jpg"
