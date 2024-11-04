@@ -1,31 +1,11 @@
 import React from "react";
-
-const clientLogos = [
-  {
-    logo: "./Blockchain 256 logo.png",
-    alt: "",
-    description:
-      "It’s easier to reach your savings goals when you have the right savings account when you have the right.",
-  },
-  {
-    logo: "./Blockchain 256 logo.png",
-    alt: "",
-    description:
-      "Take a look and find the right one for you.when you have right savings account when you have the right.",
-  },
-  {
-    logo: "./Blockchain 256 logo.png",
-    alt: "",
-    description:
-      "It’s easier to reach your savings goals when you have the right savings account when you have the right.",
-  },
-];
+import Clients from "../Clients/Clients";
 
 const AboutUsDetailed = () => {
   return (
     <div>
       <section
-        className="ezy__sheader6 light py-14 md:py-24 text-zinc-700 dark:text-white  overflow-hidden relative z-[1] rounded-2xl"
+        className="ezy__sheader6 light py-14 md:py-12 text-zinc-700 dark:text-white  overflow-hidden relative z-[1] rounded-2xl"
         style={{
           backgroundImage:
             "url(https://cdn.easyfrontend.com/pictures/background/abstract-background2.jpg)",
@@ -45,42 +25,8 @@ const AboutUsDetailed = () => {
           </div>
         </div>
       </section>
-      <section className="ezy__clients17 light py-14 md:py-12 bg-white dark:bg-[#0b1727] text-zinc-700 dark:text-white">
-        <div className="container px-4">
-          <div className="grid grid-cols-12 mb-4 mb-md-5">
-            <div className="col-span-12 md:col-span-8 md:col-start-3 text-center">
-              <h2 className="text-[32px] font-bold mb-6">
-                Meet Our Clients & Partners
-              </h2>
-            </div>
-          </div>
-          <div className="flex lg:flex-row flex-col gap-8 justify-center mx-6">
-            {clientLogos.map((client, i) => (
-              <div className=" mt-8 " key={i}>
-                <div className="group text-center duration-300">
-                  <div className="shadow-xl px-6 py-6 rounded-md">
-                    <img
-                      src={client.logo}
-                      alt=""
-                      className="max-h-[200px] mx-auto grayscale group-hover:grayscale-0"
-                    />
-                  </div>
-                </div>
-                {/* <div className="group origin-bottom-right duration-500 -rotate-12 hover:-rotate-0 hover:-skew-x-12 skew-x-0 hover:-translate-x-6  hover:translate-y-12">
-                  <div className="duration-500 group-hover:duration-400 relative rounded-2xl w-64 h-36 bg-zinc-800 text-gray-50 flex flex-col justify-center items-center  before:-skew-x-12  before:rounded-2xl  before:absolute before:content['']  before:bg-neutral-700 before:right-3 before:top-0 before:w-64 before:h-32 before:-z-10 group-hover:before:-right-3 group-hover:before:skew-x-12 before:duration-500 group-hover:duration-500">
-                    <img
-                      src={client.logo}
-                      alt=""
-                      className="max-h-[100px] mx-auto "
-                    />
-                  </div>
-                </div> */}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="ezy__about11 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+
+      <section className="ezy__about11 light py-14 md:py-6 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
         <div className="container px-4">
           <div className="grid grid-cols-12 gap-5 justify-center items-center">
             <div className="col-span-12 lg:col-span-6">
@@ -142,6 +88,7 @@ const AboutUsDetailed = () => {
           </div>
         </div>
       </section>
+      <Clients />
     </div>
   );
 };

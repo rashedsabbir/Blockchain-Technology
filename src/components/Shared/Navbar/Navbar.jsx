@@ -33,10 +33,15 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>About Us</a>
+                <a href="/" className=" ">
+                  Home
+                </a>
               </li>
               <li>
-                <a>Contact Us</a>
+                <a href="/about-us">About Us</a>
+              </li>
+              <li>
+                <a href="/contact">Contact Us</a>
               </li>
               <li>
                 <a>Services</a>
@@ -44,7 +49,7 @@ const Navbar = () => {
               {/* <li>
                 <a>Team</a>
               </li> */}
-              <li>
+              {/* <li>
                 <a>Career</a>
               </li>
               <li>
@@ -57,7 +62,7 @@ const Navbar = () => {
                     <a>Product 2</a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li>
                 <a>FAQ</a>
               </li>
@@ -79,6 +84,11 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal  px-1 gap-2">
             <li>
+              <a href="/" className=" nav-class text-primary">
+                Home
+              </a>
+            </li>
+            <li>
               <a href="/about-us" className=" nav-class text-primary">
                 About US
               </a>
@@ -94,7 +104,7 @@ const Navbar = () => {
             {/* <li>
               <a className="nav-class text-primary">Team</a>
             </li> */}
-            <li>
+            {/* <li>
               <a className="nav-class text-primary">Career</a>
             </li>
             <li>
@@ -109,7 +119,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </details>
-            </li>
+            </li> */}
 
             <li>
               <a className="nav-class text-primary">FAQ</a>
