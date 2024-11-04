@@ -5,7 +5,7 @@ const Header = () => {
     <div>
       <section className="relative   text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute inset-0 bg-cover bg-center hero-bg"></div>
+        <div className="absolute inset-0 bg-cover bg-center hero-bg border-none"></div>
 
         <div className="container mx-auto px-4 py-24 md:py-32 relative lg:my-12">
           <div className="flex flex-col md:flex-row items-center justify-between">
@@ -98,17 +98,17 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0">
-          {/* <svg
-            viewBox="0 0 1420 120"
-            fill="black"
+        <div className="absolute bottom-0 left-0 right-0 ">
+          <svg
+            className="overflow-hidden"
+            viewBox="0 0 1420 119"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
-              fill="white"
+              fill="currentColor"
             />
-          </svg> */}
+          </svg>
           {/* <svg
             id="wave"
             viewBox="0 0 1920 230"

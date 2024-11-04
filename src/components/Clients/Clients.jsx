@@ -24,7 +24,7 @@ const Clients = () => {
 
   return (
     <div>
-      <section className="ezy__clients17 light py-14 pb-12 bg-white dark:bg-[#0b1727] text-zinc-700 dark:text-white">
+      <section className="ezy__clients17 light pb-12 bg-white dark:bg-[#0b1727] text-zinc-700 dark:text-white">
         <div className="container px-4">
           <div className="grid grid-cols-12 mb-4 mb-md-5">
             <div className="col-span-12 md:col-span-8 md:col-start-3 text-center">

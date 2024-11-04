@@ -1,5 +1,6 @@
 import React from "react";
 import Clients from "../Clients/Clients";
+import MoreAboutUsSubheader from "./MoreAboutUsSubheader";
 
 const AboutUsDetailed = () => {
   return (
@@ -88,6 +89,7 @@ const AboutUsDetailed = () => {
           </div>
         </div>
       </section>
+      <MoreAboutUsSubheader />
       <Clients />
     </div>
   );
