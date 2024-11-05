@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, sans-serif;
-  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-style: normal;
 
   color-scheme: light;
   /* color-scheme: light dark; */

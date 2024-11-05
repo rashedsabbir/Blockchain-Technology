@@ -4,7 +4,7 @@ import Switcher from "../../Hooks/DarkMode/Switcher";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 bg-white  backdrop-filter backdrop-blur-lg bg-opacity-0 ">
+    <div className="sticky top-0 z-50 bg-white  backdrop-filter backdrop-blur-2xl bg-opacity-0 ">
       <div className="navbar flex justify-between">
         <div className="navbar-center">
           <div className="dropdown">
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <a href="/contact">Contact Us</a>
               </li>
               <li>
-                <a>Services</a>
+                <a href="/services">Services</a>
               </li>
               {/* <li>
                 <a>Team</a>
@@ -99,7 +99,9 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="nav-class text-primary">Services</a>
+              <a href="/services" className="nav-class text-primary">
+                Services
+              </a>
             </li>
             {/* <li>
               <a className="nav-class text-primary">Team</a>

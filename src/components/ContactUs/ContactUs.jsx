@@ -3,7 +3,7 @@ import React from "react";
 const ContactUs = () => {
   return (
     <div className="">
-      <button className="smky-btn3 relative px-6 after:absolute after:h-1 after:hover:h-[200%] transition-all duration-500 hover:transition-all hover:duration-500 after:transition-all after:duration-500 after:hover:transition-all after:hover:duration-500 overflow-hidden z-20 after:z-[-20] after:bg-[#abd373] after:rounded-t-full after:w-full after:bottom-0 after:left-0 text-gray-600 text-4xl py-2 my-8 bg-zinc-300 border-none hover:text-white">
+      <button className="smky-btn3 relative px-6 after:absolute after:h-1 after:hover:h-[200%] transition-all duration-500 hover:transition-all hover:duration-500 after:transition-all after:duration-500 after:hover:transition-all after:hover:duration-500 overflow-hidden z-20 after:z-[-20] after:bg-[#abd373] after:rounded-t-full after:w-full after:bottom-0 after:left-0  text-4xl py-2 my-8 bg-gradient-to-l from-slate-300 to-slate-100 text-slate-600 border-none hover:text-white">
         Contact Us
       </button>
       <section className="text-gray-700 body-font h-screen relative">

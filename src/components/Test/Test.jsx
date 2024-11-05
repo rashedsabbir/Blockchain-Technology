@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Test = () => {
   return (
     <div>
-      <section
+      {/* <section
         className="ezy__sheader5 light bg-center  relative z-[1]  text-white overflow-hidden py-24 md:py-48"
         style={{
           backgroundImage:
@@ -44,7 +44,7 @@ const Test = () => {
             ></path>
           </svg>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
