@@ -89,8 +89,8 @@ const AboutUsDetailed = () => {
           </div>
         </div>
       </section>
-      <MoreAboutUsSubheader />
       <Clients />
+      <MoreAboutUsSubheader />
     </div>
   );
 };

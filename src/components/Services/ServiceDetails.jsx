@@ -184,22 +184,55 @@ const ServiceDetails = () => {
               </button>
             ))}
           </nav>
+
+          <div class="relative flex h-[12em] w-[18em] items-center justify-center rounded-[1.5em] border-[1px] border-[rgba(107,33,168,1)] bg-[rgba(107,33,168,0.24)] p-[1.5em] text-lime-300">
+            <div class="group absolute left-1/2 top-1/2 flex h-[3em] w-[3em] -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-[1.5em] border-[1px] border-[#ffffffaa] bg-[#8988885c] backdrop-blur-[6px] duration-[500ms] ">
+              <svg
+                className="animate-pulse"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#df2626"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  {" "}
+                  <path
+                    d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z"
+                    fill="#1C274C"
+                  ></path>{" "}
+                </g>
+              </svg>
+            </div>
+            <h1 class="text-center font-nunito text-[2em] font-black text-purple-950">
+              hover over <br />
+              <br />
+              <br /> the info icon
+            </h1>
+          </div>
         </div>
 
         {/* Tab Content */}
 
         <div className="md:w-2/4 w-full px-8 md:py-0 py-4">
           <div className={`transition-opacity duration-300 ease-in-out`}>
-            <h1 className=" font-bold mb-4">{tabsData[activeTab].title}</h1>
+            <h1 className="text-gray-700 font-bold mb-4">
+              {tabsData[activeTab].title}
+            </h1>
             <p className="p-4">{tabsData[activeTab].description}</p>
             <div className="space-y-4">
               {tabsData[activeTab].content.map((subService, index) => (
                 <details
                   key={index}
-                  className="group border-s-4 border-green-500 bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden"
+                  className="border-s-4 border-emerald-500 font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-white backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-800 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden  hover:border-gray-300 rounded-lg group [&_summary::-webkit-details-marker]:hidden"
                 >
                   <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-                    <h3 className="text-lg font-medium text-gray-900">
+                    <h3 className="text-lg font-bold text-gray-800 hover:text-gray-100">
                       {subService.summary}
                     </h3>
 
@@ -219,7 +252,7 @@ const ServiceDetails = () => {
                     </span>
                   </summary>
 
-                  <p className="mt-4 leading-relaxed text-gray-700">
+                  <p className="mt-4 leading-relaxed text-gray-700 hover:text-gray-100">
                     {subService.details}
                   </p>
                 </details>
