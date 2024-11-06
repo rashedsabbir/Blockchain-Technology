@@ -14,6 +14,7 @@ import Home from "./components/Home/Home";
 import ContactUsDeailed from "./components/ContactUs/ContactUsDeailed";
 import AboutUsDetailed from "./components/AboutUs/AboutUsDetailed";
 import ServiceDetails from "./components/Services/ServiceDetails";
+import FAQ from "./components/FAQ/FAQ";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/contact" element={<ContactUsDeailed />} />
         <Route path="/about-us" element={<AboutUsDetailed />} />
         <Route path="/services" element={<ServiceDetails />} />
+        <Route path="/faq" element={<FAQ />} />
       </Routes>
       <Footer />
       {/* <Test /> */}

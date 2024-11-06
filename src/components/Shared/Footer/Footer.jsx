@@ -242,7 +242,7 @@ const Footer = () => {
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      Contact US{" "}
+                      Contact Us{" "}
                     </a>
                   </li>
 

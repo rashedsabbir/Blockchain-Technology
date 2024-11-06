@@ -185,8 +185,8 @@ const ServiceDetails = () => {
             ))}
           </nav>
 
-          <div class="relative flex h-[12em] w-[18em] items-center justify-center rounded-[1.5em] border-[1px] border-[rgba(107,33,168,1)] bg-[rgba(107,33,168,0.24)] p-[1.5em] text-lime-300">
-            <div class="group absolute left-1/2 top-1/2 flex h-[3em] w-[3em] -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-[1.5em] border-[1px] border-[#ffffffaa] bg-[#8988885c] backdrop-blur-[6px] duration-[500ms] ">
+          <div className="relative flex h-[12em] w-[18em] items-center justify-center rounded-[1.5em] border-[1px] border-[rgba(107,33,168,1)] bg-[rgba(107,33,168,0.24)] p-[1.5em] text-lime-300">
+            <div className="group absolute left-1/2 top-1/2 flex h-[3em] w-[3em] -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-[1.5em] border-[1px] border-[#ffffffaa] bg-[#8988885c] backdrop-blur-[6px] duration-[500ms] ">
               <svg
                 className="animate-pulse"
                 viewBox="0 0 24 24"
@@ -194,11 +194,11 @@ const ServiceDetails = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#df2626"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -209,7 +209,7 @@ const ServiceDetails = () => {
                 </g>
               </svg>
             </div>
-            <h1 class="text-center font-nunito text-[2em] font-black text-purple-950">
+            <h1 className="text-center font-nunito text-[2em] font-black text-purple-950">
               hover over <br />
               <br />
               <br /> the info icon

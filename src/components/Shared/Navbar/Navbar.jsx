@@ -64,7 +64,7 @@ const Navbar = () => {
                 </ul>
               </li> */}
               <li>
-                <a>FAQ</a>
+                <a href="/faq">FAQ</a>
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href="/about-us" className=" nav-class text-primary">
-                About US
+                About Us
               </a>
             </li>
             <li>
@@ -124,7 +124,9 @@ const Navbar = () => {
             </li> */}
 
             <li>
-              <a className="nav-class text-primary">FAQ</a>
+              <a href="/faq" className="nav-class text-primary">
+                FAQ
+              </a>
             </li>
           </ul>
         </div>
