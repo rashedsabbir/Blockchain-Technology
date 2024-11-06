@@ -69,7 +69,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="">
-            <a className="btn btn-ghost text-xl text-primary dark:text-secondary  ">
+            <a
+              href="/"
+              className="btn btn-ghost text-xl text-primary dark:text-secondary  "
+            >
               <img
                 className="lg:w-10 lg:h-12 w-5 h-5"
                 src="/Blockchain tech logo.png"

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./FAQ.css";
+import MoreAboutUsSubheader from "../AboutUs/MoreAboutUsSubheader";
 
 const FAQ = () => {
   const [bgAccording, setBgAccording] = useState(null);
@@ -144,6 +145,7 @@ const FAQ = () => {
           ))}
         </div>
       </div>
+      <MoreAboutUsSubheader />
     </div>
   );
 };
