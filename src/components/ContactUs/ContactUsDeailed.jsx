@@ -19,7 +19,10 @@ const ContactUsDeailed = () => {
                 Contact Us
               </h1>
               <p className="text-xl leading-snug opacity-75 mt-6">
-                <Link to="/">Home</Link> {">"} Contact Us
+                <Link re to="/">
+                  Home
+                </Link>{" "}
+                {">"} Contact Us
               </p>
             </div>
           </div>
