@@ -13,7 +13,7 @@ const NotFound = () => {
         The page cannot be found. The requested URL was not found on this
         server.{" "}
       </h1>
-      <Link to={`/`}>
+      <Link to="/">
         <button
           className="bg-white w-56 rounded-2xl h-14 my-6 relative text-right text-black text-xl font-semibold group"
           type="button"

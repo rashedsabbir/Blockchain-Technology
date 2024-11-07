@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ContactUsDeailed = () => {
   return (
@@ -19,7 +19,7 @@ const ContactUsDeailed = () => {
                 Contact Us
               </h1>
               <p className="text-xl leading-snug opacity-75 mt-6">
-                <a href="/">Home</a> {">"} Contact Us
+                <Link to="/">Home</Link> {">"} Contact Us
               </p>
             </div>
           </div>
@@ -100,7 +100,6 @@ const ContactUsDeailed = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29205.814299579364!2d90.37271757910156!3d23.792741499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7617fda4ea1%3A0xe097ea5c0a771a32!2sStech%20Group!5e0!3m2!1sen!2sbd!4v1729314014017!5m2!1sen!2sbd"
           width="100%"
           height="100%"
-          allowfullscreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Switcher from "../../Hooks/DarkMode/Switcher";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -33,44 +34,44 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a href="/" className=" ">
+                <Link to="/" className=" ">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about-us">About Us</a>
+                <Link to="/about-us">About Us</Link>
               </li>
               <li>
-                <a href="/contact">Contact Us</a>
+                <Link to="/contact">Contact Us</Link>
               </li>
               <li>
-                <a href="/services">Services</a>
+                <Link to="/services">Services</Link>
               </li>
               {/* <li>
-                <a>Team</a>
+                <a>Team</Link>
               </li> */}
               {/* <li>
-                <a>Career</a>
+                <a>Career</Link>
               </li>
               <li>
-                <a>Products</a>
+                <a>Products</Link>
                 <ul className="p-2">
                   <li>
-                    <a>Product 1</a>
+                    <a>Product 1</Link>
                   </li>
                   <li>
-                    <a>Product 2</a>
+                    <a>Product 2</Link>
                   </li>
                 </ul>
               </li> */}
               <li>
-                <a href="/faq">FAQ</a>
+                <Link to="/faq">FAQ</Link>
               </li>
             </ul>
           </div>
           <div className="">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="btn btn-ghost text-xl text-primary dark:text-secondary  "
             >
               <img
@@ -81,55 +82,55 @@ const Navbar = () => {
               <h3 className="neon-text glitch-effect lg:text-2xl">
                 Blockchain Technology
               </h3>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal  px-1 gap-2">
             <li>
-              <a href="/" className=" nav-class text-primary">
+              <Link to="/" className=" nav-class text-primary">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about-us" className=" nav-class text-primary">
+              <Link to="/about-us" className=" nav-class text-primary">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="nav-class text-primary">
+              <Link to="/contact" className="nav-class text-primary">
                 Contact Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/services" className="nav-class text-primary">
+              <Link to="/services" className="nav-class text-primary">
                 Services
-              </a>
+              </Link>
             </li>
             {/* <li>
-              <a className="nav-class text-primary">Team</a>
+              <a className="nav-class text-primary">Team</Link>
             </li> */}
             {/* <li>
-              <a className="nav-class text-primary">Career</a>
+              <a className="nav-class text-primary">Career</Link>
             </li>
             <li>
               <details>
                 <summary className="nav-class text-primary">Products</summary>
                 <ul className="p-2">
                   <li>
-                    <a>Product 1</a>
+                    <a>Product 1</Link>
                   </li>
                   <li>
-                    <a>Product 2</a>
+                    <a>Product 2</Link>
                   </li>
                 </ul>
               </details>
             </li> */}
 
             <li>
-              <a href="/faq" className="nav-class text-primary">
+              <Link to="/faq" className="nav-class text-primary">
                 FAQ
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

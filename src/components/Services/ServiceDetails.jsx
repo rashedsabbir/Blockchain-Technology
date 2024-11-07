@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MoreAboutUsSubheader from "../AboutUs/MoreAboutUsSubheader";
+import { Link } from "react-router-dom";
 
 const tabsData = [
   {
@@ -149,7 +150,7 @@ const ServiceDetails = () => {
                 Our Services
               </h1>
               <p className="text-xl leading-snug opacity-75 mt-6">
-                <a href="/">Home</a> {">"} Services
+                <Link to="/">Home</Link> {">"} Services
               </p>
             </div>
           </div>

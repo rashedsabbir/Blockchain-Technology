@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./FAQ.css";
 import MoreAboutUsSubheader from "../AboutUs/MoreAboutUsSubheader";
+import { Link } from "react-router-dom";
 
 const FAQ = () => {
   const [bgAccording, setBgAccording] = useState(null);
@@ -53,7 +54,7 @@ const FAQ = () => {
                 FAQ
               </h1>
               <p className="text-xl leading-snug opacity-75 mt-6">
-                <a href="/">Home</a> {">"} FAQ
+                <Link to="/">Home</Link> {">"} FAQ
               </p>
             </div>
           </div>

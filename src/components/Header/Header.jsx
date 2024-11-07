@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -20,18 +21,18 @@ const Header = () => {
                 future.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="bg-white text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center"
                 >
                   Get Started
-                </a>
-                <a
-                  href="/about-us"
+                </Link>
+                <Link
+                  to="/about-us"
                   className="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
@@ -12,7 +13,6 @@ const ContactUs = () => {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29205.814299579364!2d90.37271757910156!3d23.792741499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7617fda4ea1%3A0xe097ea5c0a771a32!2sStech%20Group!5e0!3m2!1sen!2sbd!4v1729314014017!5m2!1sen!2sbd"
             width="100%"
             height="100%"
-            allowfullscreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
@@ -307,7 +307,7 @@ const ContactUs = () => {
                 </div>
               </div>
               <div className="">
-                <a href="/contact">
+                <Link to="/contact">
                   <button className="relative inline-flex h-12 active:scale-95 transistion overflow-hidden rounded-lg p-[1px] focus:outline-none">
                     <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
                     <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-white px-7 text-sm font-medium text-gray-800 backdrop-blur-3xl gap-2 undefined">
@@ -325,7 +325,7 @@ const ContactUs = () => {
                       </svg>
                     </span>
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Clients from "../Clients/Clients";
 import MoreAboutUsSubheader from "./MoreAboutUsSubheader";
+import { Link } from "react-router-dom";
 
 const AboutUsDetailed = () => {
   return (
@@ -20,7 +21,7 @@ const AboutUsDetailed = () => {
                 About Us
               </h1>
               <p className="text-xl leading-snug opacity-75 mt-6">
-                <a href="/">Home</a> {">"} About Us
+                <Link to="/">Home</Link> {">"} About Us
               </p>
             </div>
           </div>

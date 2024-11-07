@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -49,7 +50,7 @@ const Footer = () => {
               <ul className="mt-8 flex gap-6 justify-center items-center">
                 <li>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/blockchaintechnologyltd/"
                     rel="noreferrer"
                     target="_blank"
                     className="text-gray-700 transition hover:opacity-75"
@@ -79,53 +80,53 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a
-                      href="/services"
+                    <Link
+                      to="/services"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
                       Software Development{" "}
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="/services"
+                    <Link
+                      to="/services"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
                       IT Consulting and Strategy{" "}
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="/services"
+                    <Link
+                      to="/services"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
                       Cybersecurity Services{" "}
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="/services"
+                    <Link
+                      to="/services"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
                       IT Infrastructure Services{" "}
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="/services"
+                    <Link
+                      to="/services"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
                       Digital Marketing Services{" "}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -135,33 +136,33 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a
-                      href="/about-us"
+                    <Link
+                      to="/about-us"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
                       About{" "}
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="/contact"
+                    <Link
+                      to="/contact"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
                       Contact Us{" "}
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="/faq"
+                    <Link
+                      to="/faq"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
                       FAQ{" "}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
