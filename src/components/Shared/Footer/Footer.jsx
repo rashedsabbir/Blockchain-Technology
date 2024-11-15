@@ -4,212 +4,90 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-white lg:grid lg:grid-cols-5 gap-4">
-        <div className="  lg:col-span-2 flex lg:flex-row flex-col lg:py-12 items-center">
-          <img src="./Blockchain 256 logo.png" alt="" className=" h-80 w-80 " />
-          <p className="px-4">
-            Blockchain Technoloogy aims to please your needs as per
-            requirements. You can reach us via email at <br />
-            <a href="mailto:blockchaintech@stechgroupbd.com">
-              blockchaintech@stechgroupbd.com
+      <div className="pt-12">
+        <footer className="footer bg-base-100 text-base-content p-10 flex flex-col md:flex-row justify-between lg:px-64">
+          <nav>
+            <h6 className="footer-title">Services</h6>
+            <Link to="/services" className="link link-hover">
+              Software Development
+            </Link>
+            <Link to="/services" className="link link-hover">
+              IT Consulting and Strategy
+            </Link>
+            <Link to="/services" className="link link-hover">
+              Cybersecurity Services
+            </Link>
+            <Link to="/services" className="link link-hover">
+              IT Infrastructure Services
+            </Link>
+            <Link to="/services" className="link link-hover">
+              Digital Marketing Services
+            </Link>
+          </nav>
+          <nav>
+            <h6 className="footer-title">Company</h6>
+            <Link to="/about-us" className="link link-hover">
+              About
+            </Link>
+            <Link to="/contact" className="link link-hover">
+              Contact us
+            </Link>
+            <Link to="/faq" className="link link-hover">
+              FAQ
+            </Link>
+            {/* <a className="link link-hover">Press kit</a> */}
+          </nav>
+          <nav className="text-left">
+            <h6 className="footer-title">Call us</h6>
+            <a className="link link-hover">
+              <a
+                href="tel:+8809606990123"
+                className="block text-lg font-medium  hover:opacity-75 "
+              >
+                +8809606990123
+              </a>
+              <a
+                href="tel:+8801818773300"
+                className="block text-lg font-medium  hover:opacity-75 "
+              >
+                +8801818773300
+              </a>
             </a>
-          </p>
-        </div>
-
-        <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-            <div className="mx-12">
-              <p>
-                <span className="text-lg font-bold uppercase tracking-wide text-gray-500">
-                  {" "}
-                  Call us{" "}
-                </span>
-
-                <a
-                  href="tel:+8809606990123"
-                  className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
+            <a className="link link-hover">
+              House- 31, Road- 17, Block- E <br /> Banani, Dhaka- 1213,
+              Bangladesh
+            </a>
+            <a className="link link-hover">
+              Saturday to Thursday: 9am - 5pm <br /> Weekend: 10am - 3pm
+            </a>
+          </nav>
+        </footer>
+        <footer className="footer bg-base-100 text-base-content border-base-300 border-t lg:px-60 py-4">
+          <aside className="grid-flow-col items-center">
+            <img className="w-24 h-24" src="./Blockchain 256 logo.png"></img>
+            <p className="text-left">
+              Blockchain Technology Ltd.
+              <br />
+              Aiming to please your needs as per requirements.
+            </p>
+          </aside>
+          <nav className="place-self-center ">
+            <div className="grid grid-flow-col gap-4">
+              <Link to="https://www.facebook.com/blockchaintechnologyltd/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  className="fill-current"
                 >
-                  +8809606990123
-                </a>
-                <a
-                  href="tel:+8801818773300"
-                  className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
-                >
-                  +8801818773300
-                </a>
-              </p>
-
-              <p className="mt-8">
-                House- 31, Road- 17, Block- E Banani, <br /> Dhaka- 1213,
-                Bangladesh
-              </p>
-              <ul className="mt-8 space-y-1 text-sm text-gray-700">
-                <li>Saturday to Thursday: 9am - 5pm</li>
-                <li>Weekend: 10am - 3pm</li>
-              </ul>
-              <ul className="mt-8 flex gap-6 justify-center items-center">
-                <li>
-                  <a
-                    href="https://www.facebook.com/blockchaintechnologyltd/"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    <span className="sr-only">Facebook</span>
-
-                    <svg
-                      className="size-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                </svg>
+              </Link>
             </div>
-
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div>
-                <p className="font-bold text-gray-900">Services</p>
-
-                <ul className="mt-6 space-y-4 text-sm">
-                  <li>
-                    <Link
-                      to="/services"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
-                      {" "}
-                      Software Development{" "}
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      to="/services"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
-                      {" "}
-                      IT Consulting and Strategy{" "}
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      to="/services"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
-                      {" "}
-                      Cybersecurity Services{" "}
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      to="/services"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
-                      {" "}
-                      IT Infrastructure Services{" "}
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      to="/services"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
-                      {" "}
-                      Digital Marketing Services{" "}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <p className="font-bold text-gray-900">Company</p>
-
-                <ul className="mt-6 space-y-4 text-sm">
-                  <li>
-                    <Link
-                      to="/about-us"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
-                      {" "}
-                      About{" "}
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      to="/contact"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
-                      {" "}
-                      Contact Us{" "}
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      to="/faq"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
-                      {" "}
-                      FAQ{" "}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-12 border-t border-gray-100 pt-12">
-            <div className="sm:flex sm:items-center sm:justify-between">
-              {/* <ul className="flex flex-wrap gap-4 text-xs justify-center">
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Terms & Conditions{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Privacy Policy{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition hover:opacity-75"
-                  >
-                    {" "}
-                    Cookies{" "}
-                  </a>
-                </li>
-              </ul> */}
-
-              <p className="mt-8 text-xs text-gray-500 sm:mt-0">
-                &copy; 2024. Blockchain Technology Limited. All rights reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+          </nav>
+        </footer>
+      </div>
     </div>
   );
 };
