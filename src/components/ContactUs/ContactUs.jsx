@@ -7,7 +7,7 @@ const ContactUs = () => {
       <button className="smky-btn3 relative px-6 after:absolute after:h-1 after:hover:h-[200%] transition-all duration-500 hover:transition-all hover:duration-500 after:transition-all after:duration-500 after:hover:transition-all after:hover:duration-500 overflow-hidden z-20 after:z-[-20] after:bg-[#abd373] after:rounded-t-full after:w-full after:bottom-0 after:left-0  text-4xl py-2 my-8 bg-gradient-to-l from-slate-300 to-slate-100 text-slate-600 border-none hover:text-white">
         Contact Us
       </button>
-      <section className="text-gray-700 body-font h-screen relative">
+      <section className="text-gray-700 body-font relative">
         <div className="md:absolute inset-0 bg-gray-300 ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29205.814299579364!2d90.37271757910156!3d23.792741499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7617fda4ea1%3A0xe097ea5c0a771a32!2sStech%20Group!5e0!3m2!1sen!2sbd!4v1729314014017!5m2!1sen!2sbd"
@@ -17,7 +17,7 @@ const ContactUs = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="flex md:justify-end md:p-4 lg:p-24  px-2">
+        <div className="flex justify-center py-4 md:justify-end md:p-4 lg:p-24  px-2">
           <div className="product-card lg:w-[400px] lg:h-[450px] rounded-md shadow-xl overflow-hidden z-[10] relative cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
             <div className="absolute -left-[20%] top-0 group-hover:rotate-12 transition-all duration-300 group-hover:scale-150">
               <div className="flex gap-1">
